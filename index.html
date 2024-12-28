@@ -2,154 +2,143 @@
 <html>
   <head>
     <meta charset="utf-8" />
-	<title>Myghpage</title>  
-	<link rel="stylesheet" type="text/css" href="style/index.css" />
+    <title>My-Ghpage</title>
+    <link rel="stylesheet" type="text/css" href="style/index.css" />
+    <style>
+      /* 优化背景样式 */
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to bottom, #f0f4f8, #d9e3ea);
+        color: #333;
+      }
+
+      #indexbigimg {
+        position: relative;
+        background: url('img/background.jpg') no-repeat center center/cover;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #indexbigimg #formaltext {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 8px;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      #selfcontainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 50px;
+        background: #fff;
+        border-radius: 8px;
+        margin: 20px auto;
+        max-width: 80%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      #selfcontainer img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+      }
+
+      #selfcontainer div {
+        max-width: 60%;
+        line-height: 1.6;
+      }
+
+      #selfcontainer h2 {
+        margin-top: 0;
+      }
+    </style>
   </head>
-  
   <body>
-  <!--The header of the index page.-->
-	<div id="header">
-	
-	  <div id="nav">
-	    <div  id="mylogo">
-	      <img src="img/1011.png" />
-		</div>
-		
-	    <ul id="navbar">
-		   <li><a href="index.html" class="navlink">首页</a></li>
-		   <li><a href="blog.html" class="navlink">文章</a></li>
-		   <li><a href="about.html" class="navlink">关于</a></li>
-		</ul>
-	  </div>
-	  <a href="https://github.com/"  id="githublogo"><img src="img/icon-github.png" /></a>
-	</div>
-	
-	<div id="mainsection">
-	    <!--首页背景大图-->
-	    <div id="indexbigimg">
-		  <div id="formaltext">
-		    <h3>标题1</h3>
-		    <p>这里是正文。这里是正文。这里是正文。这里是正文。这里是正文。这里是正文。这里是正文。这里是正文。这里是正文。这里是正文。这里是正文。</p>
-		  </div>
-		</div>
-		
-		<!--首页三列等高-->
-		<div id="threeequalheight">
-	       <div id="leftsection" class="equalheight">
-		      <div class="inner">
-		         <img src="img/290.jpg" class="equalimg" />
-			     <p>这里是正文，字体大小12px，行高170%。整块白色的底宽度为320px，图片大小为300*180.</p>
-			     <p>文字距离图片下方间隔为15px，距离白色底左右两侧的内边距为30px，距离白色底块下边的内边距为25px。</p>
-			     <p>三个白色模块之间的间隔为10px，距离上面banner图片的间隔为10px。</p>
-			  </div>
-		   </div>
-		   
-		   <div id="centersection" class="equalheight">
-		      <div class="inner">
-		        <img src="img/293.jpg" class="equalimg" />
-			    <p>这三个白色模块的高度需要保持一致，且自适应于文字内容高度。</p>
-			  </div>
-		   </div>
-		
-		   <div id="rightsection" class="equalheight">
-		     <div class="inner">
-		       <img src="img/291.jpg" class="equalimg" />
-			   <p>月黑风高，彤云密布，寥廓霜天显得分外孤寂、冷清。昏暗的夜幕似无边无际的穹庐，使这城阙参差的大清皇城更显得地阔、天低，殿宇巍峨、气氛肃穆。</p>
-			   <p>紫禁城正阳门前，是一马平川的御道广场，空荡荡不见一个人影。白日这里清风雅静，夜晚则禁卫森严，偌大的广场上杳无人影，如远古的旷野一般寂静。但听得两旁钟楼的更鼓在声声回荡，在广场上发出久久沉重的回响……</p>
-			 </div>
-		   </div>
-	    </div>
-		
-		<!--首页自我介绍-->
-		<div id="selfcontiner">
-		   <img src="img/9.png" id="headpic" />
-		   <div id="selfintruction">
-		      <h2>你好</h2>
-			  <p>202231116020273 zhangjf</p>
-		   </div>
-		</div>
-		
-	</div>
-	
-	
-	
-	<!--The footer of the index page.-->
-	<div id="footer">
-	   <ul id="footernavbar">
-	     <li><a href="index.html" class="navlink">首页</a></li>
-		 <li><a href="index.html" class="navlink">文章</a></li>
-		 <li><a href="index.html" class="navlink">作品</a></li>
-		 <li><a href="index.html" class="navlink">关于</a></li>
-	   </ul>
-	   
-	   <div id="reference">
-	      <ul class="referencenav">
-		    <h4>学习资料</h4>
-			<li><a href="#" class="referencelink">LINK</a></li>
-			<li><a href="#" class="referencelink">LINK</a></li>
-			<li><a href="#" class="referencelink">LINK</a></li>
-			<li><a href="#" class="referencelink">LINK</a></li>
-			<li><a href="#" class="referencelink">LINK</a></li>
-			<li><a href="#" class="referencelink">LINK</a></li>
-		  </ul>
-		  
-          <ul class="referencenav">
-		    <h4>友情链接</h4>
-			<li><a href="#" class="referencelink">LINK</a></li>
-			<li><a href="#" class="referencelink">LINK</a></li>
-			<li><a href="#" class="referencelink">LINK</a></li>
-			<li><a href="#" class="referencelink">LINK</a></li>
-		  </ul>
-		  
-		  <ul class="referencenav">
-		    <h4>学习资料</h4>
-			<li><a href="#" class="referencelink">LINK</a></li>
-			<li><a href="#" class="referencelink">LINK</a></li>
-			<li><a href="#" class="referencelink">LINK</a></li>
-			<li><a href="#" class="referencelink">LINK</a></li>
-			<li><a href="#" class="referencelink">LINK</a></li>
-			<li><a href="#" class="referencelink">LINK</a></li>
-		  </ul>
-		  
-		  <ul class="referencenav">
-		    <h4>友情链接</h4>
-			<li><a href="#" class="referencelink">LINK</a></li>
-			<li><a href="#" class="referencelink">LINK</a></li>
-			<li><a href="#" class="referencelink">LINK</a></li>
-			<li><a href="#" class="referencelink">LINK</a></li>
-		  </ul>
-		  
-		  <ul class="referencenav">
-		    <h4>学习资料</h4>
-			<li><a href="#" class="referencelink">LINK</a></li>
-			<li><a href="#" class="referencelink">LINK</a></li>
-			<li><a href="#" class="referencelink">LINK</a></li>
-			<li><a href="#" class="referencelink">LINK</a></li>
-			<li><a href="#" class="referencelink">LINK</a></li>
-			<li><a href="#" class="referencelink">LINK</a></li>
-		  </ul>
-	   </div>
-	   
-	   <div id="footermassage">
-	        <p>版权信息</p>
-			<a href="https://github.com/"><img src="img/icon-github.png" /></a>
-	   </div>
-	   
-	</div>
-	
-	
-    <script>
-       function hiddenGithub() {
-	      var html = document.documentElement;
-		  var githublogo = document.getElementById("githublogo");
-		  
-		  if(html.clientWidth<1050) {
-		    githublogo.style.display = "none";
-		  } else {
-		    githublogo.style.display = "block";
-		  }
-	   }
-	   window.onresize=function() {hiddenGithub();};
-    </script>
+    <!-- 页眉部分 -->
+    <div id="header">
+      <div id="nav">
+        <div id="mylogo">
+          <img src="img/1011.png" alt="Logo" />
+        </div>
+        <ul id="navbar">
+          <li><a href="index.html" class="navlink">首页</a></li>
+          <li><a href="blog.html" class="navlink">文章</a></li>
+          <li><a href="about.html" class="navlink">关于</a></li>
+        </ul>
+      </div>
+      <a href="https://github.com/" id="githublogo"><img src="img/icon-github.png" alt="GitHub" /></a>
+    </div>
+
+    <!-- 主体部分 -->
+    <div id="mainsection">
+      <!-- 首页背景大图 -->
+      <div id="indexbigimg">
+        <div id="formaltext">
+          <h3>欢迎来到我的个人主页</h3>
+          <p>这里是一个分享与记录的空间，探索更多内容，了解我的世界。</p>
+        </div>
+      </div>
+
+      <!-- 首页自我介绍 -->
+      <div id="selfcontainer">
+        <img src="img/9.png" alt="个人头像" />
+        <div>
+          <h2>自我介绍</h2>
+          <p>我是Zjf，一名性格内向但乐于倾听的人。在面对自卑和内向的挑战时，我通过阅读性格分析书籍和尝试新事物（如长途骑行）逐步成长。</p>
+          <p>我坚信接受真实的自己、发现擅长之处，是变得更加强大的关键。</p>
+        </div>
+      </div>
+
+      <!-- 三列等高 -->
+      <div id="threeequalheight">
+        <div id="leftsection" class="equalheight">
+          <div class="inner">
+            <img src="img/290.jpg" class="equalimg" alt="图片1" />
+            <p>这里是正文，字体大小12px，行高170%。整块白色的底宽度为320px，图片大小为300*180.</p>
+          </div>
+        </div>
+        <div id="centersection" class="equalheight">
+          <div class="inner">
+            <img src="img/293.jpg" class="equalimg" alt="图片2" />
+            <p>如果此文本对用户不可见，建议将其删除或替换为相关信息。</p>
+          </div>
+        </div>
+        <div id="rightsection" class="equalheight">
+          <div class="inner">
+            <img src="img/291.jpg" class="equalimg" alt="图片3" />
+            <p>月黑风高，彤云密布，寥廓霜天显得分外孤寂、冷清。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 页脚部分 -->
+    <div id="footer">
+      <ul id="footernavbar">
+        <li><a href="index.html" class="navlink">首页</a></li>
+        <li><a href="index.html" class="navlink">文章</a></li>
+        <li><a href="index.html" class="navlink">作品</a></li>
+        <li><a href="index.html" class="navlink">关于</a></li>
+      </ul>
+      <div id="reference">
+        <ul class="referencenav">
+          <h4>学习资料</h4>
+          <li><a href="#" class="referencelink">LINK</a></li>
+        </ul>
+        <ul class="referencenav">
+          <h4>友情链接</h4>
+          <li><a href="#" class="referencelink">LINK</a></li>
+        </ul>
+      </div>
+      <div id="footermassage">
+        <p>版权信息</p>
+        <a href="https://github.com/"><img src="img/icon-github.png" alt="GitHub" /></a>
+      </div>
+    </div>
   </body>
 </html>
